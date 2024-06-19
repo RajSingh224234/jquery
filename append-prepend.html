@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            min-height: 150px;
+            width: 300px;
+            background: red;
+            margin: 20px auto;
+        }
+        .div1{
+            background: blue;
+        }
+        .div2{
+            background-color: green;
+        }
+        .div3{
+            background: pink;
+        }
+        .inner{
+            height: 200px;
+            width: 200px;
+            margin: 0px auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>raj</h1>
+    <h2>singh</h2> -->
+    <div class="outer div1">Outer 1</div>
+    <div class="outer div2">Outer 2</div>
+    <div class="outer div3">Outer 3</div>
+    <div class="inner">
+        <button class="bt1 butun1">Append</button>
+        <button class="bt1 butun2">Prepend</button>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".butun2").click(function(){
+                $(".div1").prepend($(".div3"));
+            });
+        });
+        $(".butun1").click(function(){
+                $(".div1").append($(".div3"));
+            });
+     
+    </script>
+</body>
+</html>

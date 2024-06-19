@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        #btn1{
+            height: 200px;
+            width: 200px;
+            background: lime;
+            color: aliceblue;
+        }
+        .btn2{
+            height: 200px;
+            width: 200px;
+            background: indigo;
+            margin: 50px;
+            color: aliceblue;
+        }
+        ul{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="btn1">id selector</div>
+    <div class="btn2">class selector</div> -->
+    <ul>
+        <li>raj</li>
+        <li>ram</li>
+        <li>manish</li>
+        <li>aman</li>
+    </ul>
+    <button>click</button>
+    <!-- <p>myself raj singh</p> -->
+    <script src="js/jquery.js"></script>
+    <script>
+    //     $(function(){
+    //         $("#btn1").click(function(){
+    //             alert("using id selector");
+    //         })
+    //     })
+    //    $(function(){
+    //     $(".btn2").click(function(){
+    //         alert("you are using class selector");
+    //     })
+    //    })
+    // $(document).ready(function(){ //=>using universal selector;
+    //     $("button").click(function(){
+    //         $("*").css("border","2px solid red");
+    //     })
+    // })
+
+    // $(document).ready(function(){
+    //     $("button").click(function(){
+    //         $("#btn1,p").css("background","red");
+    //     });
+    // });
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("ul li:nth-child(2)").css("fontSize","20px")
+        })
+    })
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 200px;
+            width: 200px;
+            background: red;
+        }
+        .active{
+            border-radius: 50%;
+        }
+        #toggle{
+            height: 200px;
+            width: 200px;
+            background:gray;
+            margin:20px;
+        }
+        .toggle{
+            border-radius:20%;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="active"></div>
+    <div id="toggle" class="toggle"></div>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $("#box").click(function(){
+            //     $("#box").addClass("active");//here we are adding the given class in this division;
+            // });
+        });
+        $("#box").click(function(){
+                $("#box").removeClass("active");//here we are removing the given  class from this division;
+            });
+        $("#toggle").click(function(){
+            $(this).toggleClass("toggle");//here we are doing toggle with the given class in this division;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            background: teal;
+        }
+        #sldu{
+            background: red;
+            border: none;
+            outline: none;
+            color: aliceblue;
+        }
+        #sldd{
+            background: green;
+            border: none;
+            outline: none;
+            color: aliceblue;
+        }
+        #sldt{
+            background: blue;
+            border: none;
+            outline: none;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+     Quo, in consequuntur neque nesciunt at corrupti quaerat quia facere nobis 
+     eligendi voluptatem quos quasi vel similique ex sint hic distinctio veritatis?
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+     Quo, in consequuntur neque nesciunt at corrupti quaerat quia facere nobis 
+     eligendi voluptatem quos quasi vel similique ex sint hic distinctio veritatis?
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+     Quo, in consequuntur neque nesciunt at corrupti quaerat quia facere nobis 
+     eligendi voluptatem quos quasi vel similique ex sint hic distinctio veritatis?
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+     Quo, in consequuntur neque nesciunt at corrupti quaerat quia facere nobis 
+     eligendi voluptatem quos quasi vel similique ex sint hic distinctio veritatis?
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+     Quo, in consequuntur neque nesciunt at corrupti quaerat quia facere nobis 
+     eligendi voluptatem quos quasi vel similique ex sin
+    </div>
+    <button id="sldu">slideUp</button>
+    <button id="sldd">slideDown</button>
+    <button id="sldt">slideToogle</button>
+    <button id="stop">stop</button>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#sldu").click(function(){
+                $(".outer").slideUp();
+            })
+        })
+        $("#sldd").click(function(){
+            $(".outer").slideDown();
+        })
+        $("#sldt").click(function(){
+            $(".outer").slideToggle();
+        })
+        $("#stop").click(function(){
+            $(".outer").stop();
+        })
+    </script>
+</body>
+</html>

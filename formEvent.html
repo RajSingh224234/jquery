@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        #form{
+            height: 400px;
+            width: 400px;
+            margin: auto;
+            padding: 20px;
+        }
+        input,select{
+            height: 35px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form">
+        Name <input type="text" id="name">
+        Father Name<input type="text" id="fname">
+        Username<input type="email" id="email">
+        Student Name<select id="se">
+            <option>ram</option>
+            <option >raj</option>
+            <option>manish</option>
+        </select>
+        <input type="submit" id="btn">
+    </form>
+    <script src="js/jquery.js"></script>
+    <script>
+       $(document).ready(function(){
+        $("#name").focus(function(){
+           $(this).css("background","red");
+           $(this).val("Raj Singh");//to set value of form input//
+        });
+        $("#name").blur(function(){
+            $(this).css("background","green");
+        });
+        $("#name").select(function(){
+            $(this).css("background","green");
+        });
+        $("#se").change(function(){
+            $(this).css("background","orange");
+        });
+        $("#form").submit(function(){
+            alert("are you sure !!!!");
+        });
+       });
+    </script>
+</body>
+</html>
